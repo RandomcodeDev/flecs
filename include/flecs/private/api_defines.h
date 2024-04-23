@@ -29,6 +29,9 @@
 #elif defined(__EMSCRIPTEN__)
 #define ECS_TARGET_EM
 #define ECS_TARGET_POSIX
+#elif defined(__NX__)
+#define ECS_TARGET_SWITCH
+#define ECS_TARGET_POSIX
 #endif
 
 #if defined(__MINGW32__) || defined(__MINGW64__)
